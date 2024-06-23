@@ -1,0 +1,107 @@
+/* Custom CSS */
+
+/* Custom Variables List: */
+:root {
+    --obacity-Black: rgba(0, 0, 0, .5);
+    --dark-Gray: #3f3f3f;
+    --mid-Gray: #9f9f9f;
+    --light-Gray: #dddddd;
+    --blue: #00a1e7;
+    --green: #83b925;
+    --orange: #ff5103;
+}
+/* End Variables List */
+
+body {
+    margin: 0;
+}
+
+/* -----Start Index Page----- */
+/* Start Navbar and Links */
+a:hover {
+    color: var(--orange);
+}
+a.active{
+    color: var(--blue);
+}
+a {
+    margin: 10px;
+    color: var(--green);
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar {
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    background-color: var(--dark-Gray);
+    position: fixed;
+}
+/* End Navbar and Links */
+/*----- End Index Page----- */
+
+/* Start Content Pages */
+.content {
+    padding: 100px;
+}
+/* End Content Pages */
+
+/* Start Home Template */
+/* End Home Template */
+
+/* Start About Template */
+/* End About Template */
+
+/* Start Features Template */
+/* End Features Template */
+
+/* Start Contact Template */
+/* End Contact Template */
+
+/* Start Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--light-Gray);
+    background-color: var(--dark-Gray);
+}
+/* End Footer */
+
+/* Start Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--blue));
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent,var(--green));
+}
+/* End Scrollbar */
+
+/* Start Media Query */
+@media (max-width: 767px) { /* Mobile & Tablet Rules */
+    h1, h2, h3 {
+       color: var(--blue);
+    }
+}
+
+@media (min-width: 768px) { /* Small Screen Rules */
+    h1, h2, h3 {
+        color: var(--green);
+    }
+}
+
+@media (min-width: 992px) { /* Medium Screen Rules */
+    h1, h2, h3 {
+        color: var(--orange);
+    }
+}
+
+@media (min-width: 1200px) { /* Large Screen Rules */
+    h1, h2, h3 {
+        color: var(--blue);
+    }
+}
+/* End Media Query */
